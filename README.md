@@ -11,20 +11,22 @@ To set up and run SpeechSentio locally, follow these steps:
 4. Run the main script to train the models and evaluate the system's performance.
 
 ## Table of Contents
-- Overview
-- Setup Instructions
-- Table of Contents
-- Folder Structure
-- Models
-- Datasets
-- Approach Used
-- Training & Evaluation
-- How to Render Code
-- Features and Benefits
-- Results
-- Authors
-- References
-- License
+
+- [SpeechSentio: AI-powered Speech Therapy with Emotion Analysis](#speechsentio-ai-powered-speech-therapy-with-emotion-analysis)
+  - [Overview](#overview)
+  - [Setup Instructions](#setup-instructions)
+  - [Table of Contents](#table-of-contents)
+  - [Models](#models)
+  - [Datasets](#datasets)
+  - [Approach Used](#approach-used)
+  - [Training & Evaluation](#training--evaluation)
+  - [How to Render Code](#how-to-render-code)
+  - [Features and Benefits](#features-and-benefits)
+  - [Results](#results)
+  - [Authors](#authors)
+  - [References](#references)
+  - [License](#license)
+
 
 ## Models
 The models directory contains the following trained models:
@@ -75,7 +77,58 @@ SpeechSentio utilizes a dual-branch architecture for simultaneous emotion recogn
 Training and evaluation of the models are performed using the datasets available in the data directory. Performance metrics such as accuracy, precision, recall, sensitivity, and F1 score are calculated to assess the models' effectiveness.
 
 ## How to Render Code
-Code can be rendered and executed using Jupyter notebooks available in the notebooks directory. Alternatively, Python scripts in the src folder can be run directly.
+
+### Data Preprocessing and Feature Extraction:
+
+1. Preprocess the raw speech data by implementing noise reduction, segmentation, and feature extraction techniques.
+2. Utilize algorithms like signal processing methods (e.g., Fast Fourier Transform) and feature extraction libraries (e.g., librosa) to extract relevant features such as MFCCs, pitch, energy, and formants.
+
+### Model Training:
+
+1. Design and train machine learning models for emotion detection and stutter detection using the preprocessed features.
+2. Consider using algorithms like Multi-Layer Perceptron (MLP), Convolutional Neural Networks (CNNs), decision trees, and K-Nearest Neighbors (KNN) for model training.
+3. Use TensorFlow to build and train deep learning models if neural networks are preferred.
+
+### Model Evaluation:
+
+1. Evaluate the trained models using metrics such as accuracy, precision, recall, sensitivity, and F1 score.
+2. Split the dataset into training and testing sets to assess the generalization performance of the models.
+
+### Model Serialization:
+
+1. Save the trained models to H5 files using TensorFlow's model serialization functionality.
+2. This step ensures that the trained models can be reused without the need for retraining every time.
+
+### Web Application Setup:
+
+1. Initialize a Flask web application to serve as the interface for the speech therapy system.
+2. Install Flask using pip if not already installed (`pip install Flask`).
+3. Create the necessary directory structure for your Flask application (e.g., `app.py`, `templates/`, `static/`).
+
+### Integrating Models with Flask:
+
+1. Load the trained models (stored as H5 files) into the Flask application.
+2. Define routes in Flask to handle incoming requests for speech analysis.
+3. Implement the necessary logic to preprocess input speech data and feed it into the loaded models for prediction.
+
+### Frontend Development:
+
+1. Design the user interface of the web application using HTML, CSS, and JavaScript.
+2. Utilize libraries such as Bootstrap and jQuery for responsive design and interactivity.
+3. Create forms or input fields for users to upload speech data or interact with the application.
+
+### Local Deployment:
+
+1. Run the Flask application locally on your machine.
+2. Start the Flask development server by executing the main Python file (e.g., `python app.py`) from the command line.
+3. Access the web application through a web browser by navigating to `http://localhost:5000` or the port specified in your Flask application.
+
+### Testing and Debugging:
+
+1. Test the functionality of the web application by uploading sample speech data.
+2. Debug any issues encountered during testing by examining error messages and logs.
+3. Ensure that the application behaves as expected and provides accurate analysis and feedback to users.
+
 
 ## Features and Benefits
 - Real-time analysis for pinpointing stuttering challenges.
