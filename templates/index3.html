@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speechsentio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style3.css') }}">
+    <style>
+        /* About Us Box Styles */
+        .about-us {
+            background-color: #F2D4CF; /* White background */
+            color: #000000; /* Black text color */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px; /* Adjust as needed */
+            width: 90%; /* Adjust as needed */
+            margin: 60px auto; /* Center horizontally with some margin */
+             /* Align text to the left */
+            text-align: justify;
+        }
+
+        .about-us h2 {
+            color: #ff6f61; /* Custom color for the title */
+            font-size: 24px; /* Adjust as needed */
+            margin-bottom: 10px;
+
+        }
+
+        /* Dynamic Effects */
+        .about-us {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+
+        .about-us.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        &#127908; Speechsentio &#127908;
+    </h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <label for="audioFile">Upload Audio File:</label>
+        <input type="file" name="audioFile" id="audioFile" accept=".wav" required>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+    {% if message %}
+        <p>{{ message }}</p>
+    {% endif %}
+    
+    <!-- About Us Box -->
+    <div class="about-us">
+        <h2>About Us</h2>
+        <p>Does stuttering hold you back from expressing yourself? SpeechSentio can help! Stuttering can arise from neurological factors, but emotions like anxiety can also make it worse. SpeechSentio empowers you by providing techniques to manage emotions and build confidence. Calmer speech often leads to smoother speech. Through practice exercises, you'll develop the tools you need to communicate clearly and confidently, leaving a strong impression every time..</p>
+    </div>
+
+    <!-- JavaScript for Dynamic Effects -->
+    <script>
+        window.addEventListener('DOMContentLoaded', function() {
+            var aboutUsBox = document.querySelector('.about-us');
+            if (aboutUsBox) {
+                aboutUsBox.classList.add('show');
+            }
+        });
+    </script>
+</body>
+</html>

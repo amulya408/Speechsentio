@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <style>
+        body {
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            margin: auto;
+            width: 50%;
+            border: 1px solid #ccc;
+            padding: 20px;
+            background-color: #ffffff; /* Solid white background */
+        }
+
+        .container h2 {
+            text-align: center;
+            color: #333;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 30px;
+            margin: 0;
+            padding-bottom: 10px;
+        }
+
+        .container .content {
+            font-size: 16px;
+        }
+
+        .container .sub-title {
+            font-size: 24px;
+            text-decoration: underline;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .green-container {
+            background-color: #9b59b6;
+            padding: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body style="background-image: url('{{ url_for('static', filename='pic2.jpeg') }}');">
+    <div class="container">
+        <div class="green-container">
+            <h2>Audio Analysis and Recommendation</h2>
+        </div>
+        <h3 class="sub-title">Audio Analysis</h3>
+        <div class="content">{{ message | safe }}</div>
+    </div>
+</body>
+</html>
