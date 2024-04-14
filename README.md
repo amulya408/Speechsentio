@@ -27,10 +27,46 @@ To set up and run SpeechSentio locally, follow these steps:
 - License
 
 ## Models
-The models directory contains trained models for emotion detection and stutter detection.
+The models directory contains the following trained models:
+
+1. **Word Repetition Model**: `word_repetition_model.h5`
+   - Description: This model is trained to detect word repetition patterns in speech.
+   - File: `word_repetition_model.h5`
+   - Usage: Used for identifying instances of word repetition in speech data.
+
+2. **Sound Repetition Model**: `sound_repetition_model.h5`
+   - Description: This model is designed to recognize sound repetition occurrences in speech.
+   - File: `sound_repetition_model.h5`
+   - Usage: Employed for detecting repetitions of sounds in speech samples.
+
+3. **Prolongation Model**: `prolongation_model.h5`
+   - Description: This model is trained to identify instances of sound prolongation in speech.
+   - File: `prolongation_model.h5`
+   - Usage: Utilized for detecting prolongation patterns in speech data.
+
+4. **Emotion Model**: `emotion_model.pkl`
+   - Description: This model performs emotion recognition in speech data.
+   - File: `emotion_model.pkl`
+   - Usage: Used for predicting emotions expressed in speech samples.
+
+These models are utilized in the SpeechSentio system for various speech therapy interventions and emotion analysis tasks.
 
 ## Datasets
-The data directory includes both raw and processed datasets used for training and evaluation.
+
+### Stutter Detection Dataset (sep28k)
+The `sep28k` dataset is used for stutter detection tasks in the SpeechSentio system.
+- Description: This dataset contains speech samples annotated for stuttering instances.
+- Source: [SEP-28k Dataset](https://www.kaggle.com/datasets/bschuss02/sep28k "SEP-28k Dataset")
+- Usage: Used for training and evaluating stutter detection models in SpeechSentio.
+
+### Emotion Classification Dataset (RAVDESS)
+The `RAVDESS` dataset is utilized for emotion classification tasks in the SpeechSentio system.
+- Description: This dataset consists of speech recordings portraying various emotions.
+- Source: [RAVDESS Dataset](https://www.kaggle.com/datasets/uwrfkaggler/ravdess-emotional-speech-audio "RAVDESS Dataset")
+- Usage: Employed for training and evaluating emotion classification models in SpeechSentio.
+
+These datasets are integral to the development and evaluation of the SpeechSentio system, providing essential labeled data for training machine learning models.
+
 
 ## Approach Used
 SpeechSentio utilizes a dual-branch architecture for simultaneous emotion recognition and stutter detection. Emotion analysis is performed using Mel-frequency cepstral coefficients (MFCCs) and Multi-Layer Perceptron (MLP) classifiers, while stutter detection employs decision trees and K-Nearest Neighbors (KNN) algorithms trained on speech features.
