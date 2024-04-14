@@ -136,6 +136,40 @@ The following table summarizes the accuracies obtained by various ML algorithms:
 - Abhinay Kunapuli
 
 ## References
-[List of references cited in the research paper]
+[1]. Sadeen Alharbi, Madina Hasan, Anthony J H Simons, Shelagh Brumfitt, and Phil Green, 2017, ‘Stuttering from Transcripts: A Comparison of HELM and CRF Approaches’, eprints.whiterose.ac.uk, Vol. 1, pp. 1-11, 2017. 
+[2]. Noeth, E., Wittenberg, T., Decher, M., & Dietrich, S. (2000). Automatic stuttering recognition using hidden Markov models. In Proceedings of the International Conference on Spoken Language Processing (ICSLP) (pp. 753-756).
+[3]. Kourkounakis, T., Hajavi, A., & Etemad, A. (2020). Detecting Multiple Speech Disfluencies Using a Deep Residual Network with Bidirectional Long Short-Term Memory. In 2020 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP) (pp. 3347-3351). Institute of Electrical and Electronics Engineers (IEEE).
+[4]. Al-Qatab, B. A., & Mustafa, M. B. (2021). Classification of Dysarthric Speech According to the Severity of Impairment: An Analysis of Acoustic Features. IEEE Access, 9, 18183-18194. Doi:10.1109/ACCESS.2021.3053335 
+[5]. Lalitha, S., Tripathi, S., & Gupta, D. (2019). Enhanced speech emotion detection using deep neural networks. International Journal ofSpeech Technology, 22(3), 497–510. Doi:10.1007/s10772-018-09572-8
+[6]. H. Aouani and Y. B. Ayed, “Speech Emotion Recognition with deep learning,” Procedia Computer Science, vol. 176, pp. 251-260, 2020.
+[7]. I, Husbaan. (2022). Speech Emotion Recognition System Using Machine Learning. International Journal of Research Publication and Reviews, 3(5), pp. 2869-2880. 
+[8]. Bhatia, G., Saha, B., Khamkar, M., Chandwani, A., & Khot, R. (2021). Stutter Diagnosis and Therapy System Based on Deep Learning. International Journal of Research Publication and Reviews, 5(1), 1-8.
+[9]. Barda, S. (2019). Recognition of rate of stuttering in patients having speech disorders. International Journal of Research Publication and Reviews, 3(1), 1-6.
+[10]. Mahendran,M.,Visalakshi, S., & Balaji, S. (2021). Dysarthria detection using CNN and MFCC feature extraction. International Journal of Research Publication and Reviews, 2(2), 1-7 .
+
+[11]. Mustaqeem and S. Kwon, “A CNN-Assisted enhanced audio signal processing for speech emotion recognition,” Sensors, vol. 20, no. 1, p.183, 2019. 
+[12]. M. Ghai, S. Lal, S. Duggal, and S. Manik, “Emotion recognition on speech signals using machine learning,” Mar. 2017, doi: 10.1109/icbdaci.2017.8070805. 
+[13]. Apeksha Aggarwal, Akshat Srivastava, Ajay Agarwal, Nidhi Chahal, Dilbag Singh, Abeer Ali Alnuaim, Aseel Alhadlaq and Heung-No Lee, “Two-Way feature extraction for speech emotion recognition using deep learning,” Sensors, vol. 22, no. 6, p. 2378, Mar. 2022,1-11.
+[14]. T. Kourkounakis, A. Hajavi, and A. Etemad, “FluentNet: End-to-End Detection of Stuttered Speech Disfluencies with Deep Learning,” IEEE/ACM Transactions on Audio, Speech, and Language Processing, vol. 29, pp. 2986–2999, Jan. 2021, 1-13.
+[15]. Manas Jain, Shruthi Narayan, Pratibha Balaji, Bharath KP, Abhijit Bhowmick, Karthik R, Rajesh Kumar Muthu, “Speech Emotion Recognition using Support Vector Machine,” arXiv:2002.07590 [cs, eess], Feb. 2020, doi: https://arxiv.org/abs/2002.07590, 1-6.
+[16]. Suwon Shon, Pablo Brusco, Jing Pan, Kyu J. Han, Shinji Watanabe “Leveraging Pre-trained Language Model for Speech Sentiment Analysis” INTERSPEECH 2021 30 August – 3 September 
+[17]. Bagus Tris Atmaja, Akira Sasou, “Sentiment Analysis and Emotion Recognition from Speech Using Universal Speech Representations”, 24 August 2022. 
+[18]. Shakeel, A. Sheikh, Md Sahidullah , Fabrice Hirsc, Slim Ouni, “StutterNet: Stuttering Detection Using Time Delay Neural Network” , Jan. 2021
+[19]. Colin Lea, Zifang Huang, Jaya Narain, Lauren Tooley, Dianna Yee, Tien Dung Tran, “From User Perceptions to Technical Improvement: Enabling People Who Stutter to Better Use Speech Recognition”, April 23–28, 2023 
+[20]. Phani Bhushan S, Vani H Y, D K Shivkumar, “Stuttered Speech Recognition using Convolutional Neural Networks”, 2021 
+[21]. Badshah, A., Lee, S., & Kim, J. (2017). Speech Emotion Recognition from Spectrograms with Deep Convolutional Neural Network. International Journal of Research in Engineering and Technology, 6(6), 239-244. 
+
+[22]. Li, S., Deng, L., & Huang, J. T. (2013). Hybrid Deep Neural Network – Hidden Markov Model Based Speech Emotion Recognition. International Journal of Research Publication and Reviews, 6(3), 312- 317.
+[23]. Mahesha, P., & Vinod, D. S. (2016). Automatic Segmentation and Classification of Dysfluencies in Stuttering Speech. International Journal of Research Publication and Reviews, 3(4), 12-20. 
+[24]. Mahesha, P., & Vinod, D. S. (2017). LP-Hilbert Transform Based MFCC for Effective Discrimination of Stuttering Dysfluencies. International Journal of Research Publication and Reviews, 4(3), 2564-2571. 
+[25]. Narendra, N.P., & Alku, P. (2019). Dysarthric speech classification from coded telephone speech using glottal features. Speech Communication, 110, 47-55. 
+[26]. Zhao, J., Mao, X., & Chen, L. (2018). Speech emotion recognition using deep 1D & 2D CNN LSTM networks. Biomedical Signal Processing and Control, 47, 312-323. 
+[27]. Issa, D., Demirci, M. F., & Yazici, A. (2020). Speech emotion recognition with deep convolutional neural networks. Biomedical Signal Processing and Control, 59, 101894. 
+[28]. Alif Bin Abdul Qayyum, Asiful Arefeen, & Celia Shahnaz. (2019). Convolutional Neural Network (CNN) Based Speech-Emotion Recognition. International Journal of Research Publication and Reviews, 6(4), 122-130. 
+[29]. Afroz, F., & Koolagudi, S. G. (2019). Recognition and Classification of Pauses in Stuttered Speech using Acoustic Features. International Journal of Research Publication and Reviews, 6(2), 12-20. 
+[30]. Bhushan, P., Shivkumar, D. K., Vani, H. Y., & Sreeraksha, M. R. (Year). Stuttered Speech Recognition using Convolutional Neural Networks. International Journal of Research Publication and Reviews, Volume 9(Issue 12), pp. 250-254.
+[31]GitHub Repository:
+[stutter-classification](https://github.com/mitul-garg/stutter-classification/tree/main) - Repository containing code for stutter classification.
+
 
 
